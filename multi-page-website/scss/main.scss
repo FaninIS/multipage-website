@@ -1,0 +1,125 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+@import "_variables";
+
+svg {
+   width: 20px;
+   height: 20px;
+}
+
+img {
+   width: 45px;
+   height: 45px;
+}
+
+ul {
+   list-style-type: none;
+}
+
+.container {
+   height: 100%;
+
+   .topnav-container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 4em;
+   }
+
+   .topnav-item {
+      font-family: 'bahij';
+      display: block;
+      text-decoration: none;
+      color: #000;
+      padding: .5em;
+   }
+
+   .topnav-item:hover {
+      color: rgb(28, 84, 252);
+   }
+
+   .main-container {
+      display: flex;
+      background-color: rgb(225, 223, 221);
+      border-radius: 10px;
+      margin: 0 10px 20px 10px;
+      text-align: justify;
+
+      .sidebar {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+
+         .sidebar-container {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 10px;
+            margin: 10px;
+
+            .sidebar-nav-item {
+               margin: 10px;
+               display: block;
+               }
+         }
+      }
+
+      .other-blocks {
+         display: flex;
+         flex-wrap: wrap;
+
+         .main-container-item {
+            background-color: white;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+
+            p {
+               font-family: 'bahij';
+            }
+
+            span {
+               font-family: 'chronicapro';
+               font-size: .5em;
+               color: rgb(186, 191, 191);
+            }
+         }
+
+         .main-container-item:first-child {
+            flex-basis: 48%;            
+         }
+
+         .main-container-item:nth-child(2) {
+            flex-basis: 48%;
+         }
+
+         .sub-block {
+            display: flex;
+            flex-basis: 70%;
+            flex-direction: column;
+            overflow: hidden;
+         
+         .main-container-item:first-child {
+            flex-basis: 50%;
+         }
+
+         .main-container-item:last-child {
+            flex-basis: 50%;
+            }
+
+            img {
+               float: left;
+               margin-right: 10px;
+            }
+         }
+      }
+
+         .main-container-item:last-child {
+            flex-basis: 28%;
+         }
+      }
+   }

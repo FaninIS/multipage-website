@@ -1,0 +1,172 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'bahij';
+  src: url("../fonts/bahij-sultannahia/bahij-sultannahia-webfont.woff2") format("woff2"), url("../fonts/bahij-sultannahia/bahij-sultannahia-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'chronicapro';
+  src: url("../fonts/chronicapro/chronicapro-regular-webfont.woff2") format("woff2"), url("../fonts/chronicapro/chronicapro-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+}
+
+img {
+  width: 45px;
+  height: 45px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  height: 100%;
+}
+
+.container .topnav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4em;
+}
+
+.container .topnav-item {
+  font-family: 'bahij';
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: .5em;
+}
+
+.container .topnav-item:hover {
+  color: #1c54fc;
+}
+
+.container .main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #e1dfdd;
+  border-radius: 10px;
+  margin: 0 10px 20px 10px;
+  text-align: justify;
+}
+
+.container .main-container .sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .main-container .sidebar .sidebar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.container .main-container .sidebar .sidebar-container .sidebar-nav-item {
+  margin: 10px;
+  display: block;
+}
+
+.container .main-container .other-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .main-container .other-blocks .main-container-item {
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.container .main-container .other-blocks .main-container-item p {
+  font-family: 'bahij';
+}
+
+.container .main-container .other-blocks .main-container-item span {
+  font-family: 'chronicapro';
+  font-size: .5em;
+  color: #babfbf;
+}
+
+.container .main-container .other-blocks .main-container-item:first-child {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+
+.container .main-container .other-blocks .main-container-item:nth-child(2) {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+
+.container .main-container .other-blocks .sub-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.container .main-container .other-blocks .sub-block .main-container-item:first-child {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.container .main-container .other-blocks .sub-block .main-container-item:last-child {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.container .main-container .other-blocks .sub-block img {
+  float: left;
+  margin-right: 10px;
+}
+
+.container .main-container .main-container-item:last-child {
+  -ms-flex-preferred-size: 28%;
+      flex-basis: 28%;
+}
